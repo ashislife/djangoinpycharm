@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About Us {% endblock title %}
+
+{% block body %}
+
+<!-- Hero Section -->
+<div class="position-relative text-center">
+  <!-- Background Image -->
+  <img src="{% static 'about1.jpg' %}"
+       class="img-fluid w-100"
+       style="height: 500px; object-fit: cover; filter: brightness(70%);"
+       alt="Hero Background">
+
+  <!-- Overlay Text -->
+  <div class="position-absolute top-50 start-50 translate-middle text-white">
+    <h1 class="display-3 fw-bold">🌱 Leaf Disease Detection</h1>
+    <p class="lead">Passion + Technology = Smarter Farming 🚀</p>
+    <a href="/contact" class="btn btn-success btn-lg shadow mt-3">Get Started</a>
+  </div>
+</div>
+
+
+<!-- About Content Section -->
+<div class="container my-5">
+  <div class="row align-items-center">
+
+    <!-- Left Side Image -->
+    <div class="col-md-6 mb-4 text-center">
+      <img src="{% static 'img12.png' %}" class="img-fluid rounded shadow-lg hover-zoom" alt="Leaf Disease">
+    </div>
+
+    <!-- Right Side Text -->
+    <div class="col-md-6">
+      <h2 class="text-success mb-3">Who We Are</h2>
+      <p class="text-muted">
+        Welcome to <strong>Leaf Disease Detection</strong> 🌿 — a smart AI-powered platform designed to help farmers and researchers
+        identify crop diseases early. Using <b>Deep Learning & Computer Vision</b>, we analyze leaf images to detect
+        problems like <i>Potato Blight</i>, <i>Tomato Leaf Mold</i>, and more.
+      </p>
+      <p class="text-muted">
+        Our vision is simple: <b>reduce crop losses</b>, <b>increase yields</b>, and
+        promote <b>sustainable farming</b>. 🚀
+      </p>
+      <a href="/contact" class="btn btn-success btn-lg px-4 shadow-lg">🌟 Get in Touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- Mission Section -->
+<div class="container my-5">
+  <h2 class="text-center mb-5 text-success">Our Mission</h2>
+  <div class="row text-center">
+
+    <div class="col-md-4">
+      <div class="card shadow-lg border-0 p-4 mission-card hover-glow">
+        <h4 class="text-success">🌱 Innovation</h4>
+        <p>AI & Deep Learning models designed for agriculture efficiency.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-lg border-0 p-4 mission-card hover-glow">
+        <h4 class="text-warning">🤝 Support</h4>
+        <p>Helping farmers detect diseases early and prevent crop loss.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-lg border-0 p-4 mission-card hover-glow">
+        <h4 class="text-primary">🌍 Sustainability</h4>
+        <p>Our goal is eco-friendly, smart farming for a better future.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Extra Styling -->
+<style>
+  /* Hover zoom for images */
+  .hover-zoom {
+    transition: transform 0.4s ease;
+  }
+  .hover-zoom:hover {
+    transform: scale(1.08);
+  }
+
+  /* Card hover glow */
+  .hover-glow {
+    transition: all 0.4s ease;
+  }
+  .hover-glow:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 128, 0, 0.25);
+  }
+
+  /* Animation (using Animate.css CDN) */
+</style>
+
+<!-- Animate.css for fade-in effects -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+{% endblock body %}

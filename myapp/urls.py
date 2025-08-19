@@ -19,7 +19,13 @@ urlpatterns = [
 
     path("treatment", views.treatment, name='treatment'),
 
-    path("patato", views.patato, name='patato')
+    path("patato", views.patato, name='patato'),
+
+    path("tamato",views.tamato,name='tamato'),
+
+
+
+
 
 
 ]
